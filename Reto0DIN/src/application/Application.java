@@ -13,7 +13,7 @@ import view.ViewFactory;
 
 /**
  *
- * @author 2dam
+ * @author Andoni Alday
  */
 public class Application {
 

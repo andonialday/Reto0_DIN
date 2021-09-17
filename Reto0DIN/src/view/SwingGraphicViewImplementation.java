@@ -7,7 +7,7 @@ package view;
 
 /**
  *
- * @author 2dam
+ * @author Andoni Alday
  */
 public class SwingGraphicViewImplementation implements View{
     

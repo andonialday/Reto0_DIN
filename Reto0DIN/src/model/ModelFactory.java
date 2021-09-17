@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author Enaitz Izagirre
  */
 public class ModelFactory {
       private ResourceBundle configFile;

@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author Andoni Alday
  */
 public class ViewFactory {
 

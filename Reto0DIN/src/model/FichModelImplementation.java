@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author 2dam
+ * @author Enaitz Izagirre
  */
 public class FichModelImplementation implements Model{
     
