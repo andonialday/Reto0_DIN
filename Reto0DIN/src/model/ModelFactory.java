@@ -5,10 +5,33 @@
  */
 package model;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author 2dam
  */
 public class ModelFactory {
+      private ResourceBundle configFile;
+    private String type;
+
+    public ModelFactory() {
+        configFile = ResourceBundle.getBundle("properties.model");
+        type = configFile.getString("Model_Type");
+    }
     
+    public Model getModel() {
+        Model model = null;
+        switch (type) {
+            case "BBDD": {
+                model = new BdaModelImplementation();
+            };
+            case "File": {
+                model = new FichModelImplementation();
+            };
+            default: {    
+            }
+        } 
+        return model;
+        }
 }

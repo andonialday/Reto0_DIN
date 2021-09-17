@@ -5,6 +5,8 @@
  */
 package application;
 
+import controller.Controller;
+import model.Model;
 import model.ModelFactory;
 import view.View;
 import view.ViewFactory;
@@ -23,7 +25,8 @@ public class Application {
         ViewFactory viewFactory = new ViewFactory();
         ModelFactory modelFactory = new ModelFactory();
         View view = viewFactory.getView();
-        //Controller control = new Controller();
+        Model model = modelFactory.getModel();
+        Controller control = new Controller(view, model);
     }
     
 }

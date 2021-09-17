@@ -9,6 +9,6 @@ package model;
  *
  * @author 2dam
  */
-public interface ModelInterface {
+public class BdaModelImplementation implements Model{
     
 }

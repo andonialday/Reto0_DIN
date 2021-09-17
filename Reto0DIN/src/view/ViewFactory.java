@@ -17,7 +17,7 @@ public class ViewFactory {
     private String type;
 
     public ViewFactory() {
-        configFile = ResourceBundle.getBundle("modelo.config");
+        configFile = ResourceBundle.getBundle("properties.view");
         type = configFile.getString("View_Type");
     }
 
