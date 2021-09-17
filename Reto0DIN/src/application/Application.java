@@ -5,6 +5,10 @@
  */
 package application;
 
+import model.ModelFactory;
+import view.View;
+import view.ViewFactory;
+
 /**
  *
  * @author 2dam
@@ -16,6 +20,10 @@ public class Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ViewFactory viewFactory = new ViewFactory();
+        ModelFactory modelFactory = new ModelFactory();
+        View view = viewFactory.getView();
+        //Controller control = new Controller();
     }
     
 }
