@@ -5,6 +5,8 @@
  */
 package model;
 
+import exception.*;
+
 /**
  *
  * @author Enaitz Izagirre
@@ -12,5 +14,9 @@ package model;
 public interface Model {
   
     
+    
+    public String getGreeting()  throws CreateException, ConnectException;
+        
+     
 
 }
