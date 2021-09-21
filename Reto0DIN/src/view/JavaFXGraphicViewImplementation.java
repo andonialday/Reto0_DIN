@@ -10,5 +10,11 @@ package view;
  * @author Andoni Alday
  */
 public class JavaFXGraphicViewImplementation implements View{
+
+    public void showGreeting(String greeting) {
+      
+    }
+    
+    
     
 }

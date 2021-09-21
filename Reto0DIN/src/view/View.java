@@ -10,5 +10,9 @@ package view;
  * @author Andoni Alday
  */
 public interface View {
+   
+     public void showGreeting(String greeting);
+         
+     
     
 }

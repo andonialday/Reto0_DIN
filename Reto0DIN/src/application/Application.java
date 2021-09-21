@@ -6,6 +6,8 @@
 package application;
 
 import controller.Controller;
+import exception.ConnectException;
+import exception.ReadException;
 import model.Model;
 import model.ModelFactory;
 import view.View;
@@ -20,7 +22,7 @@ public class Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ReadException, ConnectException {
         // TODO code application logic here
         ViewFactory viewFactory = new ViewFactory();
         ModelFactory modelFactory = new ModelFactory();

@@ -13,9 +13,7 @@ import exception.*;
  */
 public interface Model {
   
-    
-    
-    public String getGreeting()  throws CreateException, ConnectException;
+    public String getGreeting() throws ReadException, ConnectException;
         
      
 

@@ -5,15 +5,32 @@
  */
 package model;
 
+import java.util.ResourceBundle;
+import view.View;
+
 /**
  *
  * @author Enaitz Izagirre
  */
 public class FichModelImplementation implements Model{
 
+    private ResourceBundle configFile;
+    private String greeting;
+    
+    
     @Override
     public String getGreeting() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
+       configFile = ResourceBundle.getBundle("properties.fich");
+       greeting = configFile.getString("Saludo");
+        
+         return greeting;
     }
+    
+    
+    
+  
+
+   
     
 }

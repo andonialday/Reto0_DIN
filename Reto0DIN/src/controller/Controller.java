@@ -5,17 +5,24 @@
  */
 package controller;
 
+import exception.ConnectException;
+import exception.ReadException;
 import model.Model;
 import view.View;
 
 /**
- *
+ * In this method we take both the view and the model to show the user the greeting
  * @author Enaitz Izagirre
  */
 public class Controller {
 
-    public Controller(View view, Model model) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private String greeting;
+    
+    public Controller(View view, Model model) throws ReadException, ConnectException {
+        greeting = model.getGreeting();
+        view.showGreeting(greeting);
+        
+    
     }
     
 }
