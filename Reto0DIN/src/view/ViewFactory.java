@@ -13,24 +13,26 @@ import java.util.ResourceBundle;
  */
 public class ViewFactory {
 
-    private ResourceBundle configFile = ResourceBundle.getBundle("properties.view");
-    private String type = configFile.getString("View_Type");
-
-    public ViewFactory() { 
-    }
+    private String type = ResourceBundle.getBundle("properties.view").getString("View_Type");
+    final private String FX = "JavaFX";
+    final private String SWING = "Swing";
+    final private String TEXT = "Text";
 
     public View getView() {
         View view = null;
         switch (type) {
-            case "JavaFX": {
+            case FX: {
                 view = new JavaFXGraphicViewImplementation();
             };
-            case "Swing": {
+            break;
+            case SWING: {
                 view = new SwingGraphicViewImplementation();
             };
-            case "Text": {
+            break;
+            case TEXT: {
                 view = new TextViewImplementation();
             };
+            break;
             default: {    
             }
         } 

@@ -5,6 +5,8 @@
  */
 package properties;
 
+import exception.ConnectException;
+import java.sql.Connection;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,7 +22,10 @@ public class ConnectionOpenCloseTest {
     }
 
     @Test
-    public void testOpenConnection() {
+    public void testOpenConnection() throws ConnectException {
+      Connection con= null;
+      con = instance.openConnection();
+      assertNotNull("Error Opening connection to DataBase", con);
     }
     
 }

@@ -10,21 +10,16 @@ import exception.ConnectException;
 
 public class ConnectionOpenClose {
 	
-	private ResourceBundle configFile;
 	private String url, user,  pass;
 	
-
 	public ConnectionOpenClose() {
-		configFile = ResourceBundle.getBundle("properties.config");
-		url = configFile.getString("URL");
-		user = configFile.getString("USER");
-		pass = configFile.getString("PASSWORD");
+		url = ResourceBundle.getBundle("properties.config").getString("URL");
+		user = ResourceBundle.getBundle("properties.config").getString("USER");
+		pass = ResourceBundle.getBundle("properties.config").getString("PASSWORD");
 	}
 
 	public Connection openConnection() throws ConnectException {
-
 		Connection con= null;
-		
 		try {
 			con = DriverManager.getConnection(url, user, pass);
 		} catch (Exception e) {
@@ -34,7 +29,6 @@ public class ConnectionOpenClose {
 	}
 
 	public void closeConnection(PreparedStatement stmt, Connection con) throws ConnectException {
-
 		if (stmt != null || con != null) {
 			try {
 				stmt.close();

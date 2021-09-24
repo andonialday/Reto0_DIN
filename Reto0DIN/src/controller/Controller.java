@@ -16,9 +16,6 @@ import view.View;
  */
 public class Controller {
     
-    public Controller() {
-    }
-    
     public void run(View view, Model model) throws ReadException, ConnectException{
         String greeting = model.getGreeting();
         view.showGreeting(greeting);

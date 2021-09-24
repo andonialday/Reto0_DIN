@@ -5,16 +5,23 @@
  */
 package view;
 
+import javafx.stage.Stage;
+import view.View;
+
 /**
  *
- * @author Andoni Alday
+ * @author 2dam
  */
-public class JavaFXGraphicViewImplementation implements View{
+public class JavaFXGraphicViewImplementation implements View {
 
+    private String greeting;
+    private Stage primaryStage;
+
+    @Override
     public void showGreeting(String greeting) {
-      
+        this.greeting = greeting;
+        new JavaFXGraphicView(greeting);
+        
     }
-    
-    
     
 }

@@ -13,23 +13,21 @@ import java.util.ResourceBundle;
  */
 public class ModelFactory {
 
-    private ResourceBundle configFile = ResourceBundle.getBundle("properties.model");
-    private String type = configFile.getString("Model_Type");
-
-    public ModelFactory() {  
-    }
+    private String type = ResourceBundle.getBundle("properties.model").getString("Model_Type");
+    final private String DB = "BBDD";
+    final private String FILE = "File";
 
     public Model getModel() {
         Model model = null;
         switch (type) {
-            case "BBDD": {
+            case DB: {
                 model = new BdaModelImplementation();
             }
-            ;
-            case "File": {
+            break;
+            case FILE: {
                 model = new FichModelImplementation();
             }
-            ;
+            break;
             default: {
             }
         }
