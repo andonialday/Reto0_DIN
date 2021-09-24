@@ -12,26 +12,27 @@ import java.util.ResourceBundle;
  * @author Enaitz Izagirre
  */
 public class ModelFactory {
-      private ResourceBundle configFile;
-    private String type;
 
-    public ModelFactory() {
-        configFile = ResourceBundle.getBundle("properties.model");
-        type = configFile.getString("Model_Type");
+    private ResourceBundle configFile = ResourceBundle.getBundle("properties.model");
+    private String type = configFile.getString("Model_Type");
+
+    public ModelFactory() {  
     }
-    
+
     public Model getModel() {
         Model model = null;
         switch (type) {
             case "BBDD": {
                 model = new BdaModelImplementation();
-            };
+            }
+            ;
             case "File": {
                 model = new FichModelImplementation();
-            };
-            default: {    
             }
-        } 
-        return model;
+            ;
+            default: {
+            }
         }
+        return model;
+    }
 }

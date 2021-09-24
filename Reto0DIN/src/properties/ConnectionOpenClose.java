@@ -15,7 +15,7 @@ public class ConnectionOpenClose {
 	
 
 	public ConnectionOpenClose() {
-		configFile = ResourceBundle.getBundle("model.config");
+		configFile = ResourceBundle.getBundle("properties.config");
 		url = configFile.getString("URL");
 		user = configFile.getString("USER");
 		pass = configFile.getString("PASSWORD");

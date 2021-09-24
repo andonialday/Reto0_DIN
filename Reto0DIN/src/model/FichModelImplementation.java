@@ -6,7 +6,6 @@
 package model;
 
 import java.util.ResourceBundle;
-import view.View;
 
 /**
  *
@@ -17,13 +16,10 @@ public class FichModelImplementation implements Model{
     private ResourceBundle configFile;
     private String greeting;
     
-    
     @Override
-    public String getGreeting() {
-       
+    public String getGreeting() {    
        configFile = ResourceBundle.getBundle("properties.fich");
        greeting = configFile.getString("Saludo");
-        
          return greeting;
     }
     

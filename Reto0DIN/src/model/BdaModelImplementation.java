@@ -21,7 +21,7 @@ public class BdaModelImplementation implements Model {
     private PreparedStatement stmt;
     private ConnectionOpenClose conection = new ConnectionOpenClose();
     private String greeting;
-    private final String readGreeting = "SELECT greeting FROM saludo";
+    private final String readGreeting = "SELECT Greeting FROM greetings";
 
     @Override
     public String getGreeting() throws ReadException, ConnectException {

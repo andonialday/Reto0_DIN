@@ -13,12 +13,10 @@ import java.util.ResourceBundle;
  */
 public class ViewFactory {
 
-    private ResourceBundle configFile;
-    private String type;
+    private ResourceBundle configFile = ResourceBundle.getBundle("properties.view");
+    private String type = configFile.getString("View_Type");
 
-    public ViewFactory() {
-        configFile = ResourceBundle.getBundle("properties.view");
-        type = configFile.getString("View_Type");
+    public ViewFactory() { 
     }
 
     public View getView() {

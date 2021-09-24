@@ -15,14 +15,13 @@ import view.View;
  * @author Enaitz Izagirre
  */
 public class Controller {
-
-    private String greeting;
     
-    public Controller(View view, Model model) throws ReadException, ConnectException {
-        greeting = model.getGreeting();
+    public Controller() {
+    }
+    
+    public void run(View view, Model model) throws ReadException, ConnectException{
+        String greeting = model.getGreeting();
         view.showGreeting(greeting);
-        
-    
     }
     
 }
