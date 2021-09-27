@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Andoni Alday
@@ -13,9 +15,7 @@ public class SwingGraphicViewImplementation implements View{
 
     @Override
     public void showGreeting(String greeting) {
-        
-        
-        
+        JOptionPane.showMessageDialog(null, greeting);       
     }
     
     

@@ -5,8 +5,6 @@
  */
 package view;
 
-import java.util.ResourceBundle;
-
 /**
  *
  * @author Andoni Alday

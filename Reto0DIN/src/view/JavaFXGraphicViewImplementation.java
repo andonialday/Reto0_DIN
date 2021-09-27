@@ -6,7 +6,6 @@
 package view;
 
 import javafx.stage.Stage;
-import view.View;
 
 /**
  *
@@ -20,7 +19,7 @@ public class JavaFXGraphicViewImplementation implements View {
     @Override
     public void showGreeting(String greeting) {
         this.greeting = greeting;
-        new JavaFXGraphicView(greeting);
+        JavaFXGraphicViewAlert.infoBox(greeting,greeting);
         
     }
     
