@@ -13,14 +13,15 @@ import view.View;
 import view.ViewFactory;
 
 /**
- *
+ * It is the class from which everything is executed, it contains the main
  * @author Andoni Alday
  */
 public class Application {
 
     /**
+     * In our main we use 2 exceptions if we had a problem with the BDA.In our main we use 2 exceptions if we had a problem with the BDA.
      * @param args the command line arguments
-     * @throws exception.ReadException
+     * @throws exception.ReadException 
      * @throws exception.ConnectException
      */
     public static void main(String[] args) throws ReadException, ConnectException {

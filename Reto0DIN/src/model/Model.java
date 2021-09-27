@@ -8,13 +8,11 @@ package model;
 import exception.*;
 
 /**
- *
+ * This interface dictates the requisites of the BdaModelImplementation class and the FichModelImplementation class
  * @author Enaitz Izagirre
  */
 public interface Model {
   
     public String getGreeting() throws ReadException, ConnectException;
-        
-     
 
 }

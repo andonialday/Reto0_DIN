@@ -12,7 +12,9 @@ import java.sql.ResultSet;
 import properties.ConnectionOpenClose;
 
 /**
- *
+ * This class implements the model interface to take the getGreeting Method.
+ * Its one of the 2 classes who is called by the Model Factory
+ * It is connected to the DDBB
  * @author Enaitz Izagirre
  */
 public class BdaModelImplementation implements Model {
@@ -23,6 +25,12 @@ public class BdaModelImplementation implements Model {
     private String greeting;
     private final String readGreeting = "SELECT Greeting FROM greetings";
 
+    /**
+     * This method get the greeting from the BDA to return it 
+     * @return Returns the String Greeting from the BDA 
+     * @throws ReadException
+     * @throws ConnectException 
+     */
     @Override
     public String getGreeting() throws ReadException, ConnectException {
         ResultSet rs = null;
