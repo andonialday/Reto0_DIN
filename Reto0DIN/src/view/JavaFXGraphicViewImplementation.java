@@ -22,7 +22,7 @@ public class JavaFXGraphicViewImplementation extends Application implements View
 
     /**
      * Method to show the greeting to the user via JavaFX
-     * @param greeting
+     * @param greeting received from the controller
      */
     @Override
     public void showGreeting(String greeting) {
@@ -30,10 +30,10 @@ public class JavaFXGraphicViewImplementation extends Application implements View
         parameters[0] = greeting;
         launch(parameters);
     }
-
+   
     /**
-     *
-     * @param primaryStage
+     * Method to start the JavaFX window
+     * @param primaryStage the parameters of launch for the window creation
      */
     public void start(Stage primaryStage) {
         Label text = new Label(getParameters().getRaw().get(0));

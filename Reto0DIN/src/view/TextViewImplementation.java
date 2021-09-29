@@ -15,7 +15,7 @@ public class TextViewImplementation implements View {
 
     /**
      * Method to show the greeting to the user via the IDE Console
-     * @param greeting
+     * @param greeting received from the controller
      */
     @Override
     public void showGreeting(String greeting) {

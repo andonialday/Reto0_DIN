@@ -16,7 +16,7 @@ public class SwingGraphicViewImplementation implements View{
 
     /**
      * Method to show the greeting to the user via Swing
-     * @param greeting
+     * @param greeting received from the controller
      */
     @Override
     public void showGreeting(String greeting) {
