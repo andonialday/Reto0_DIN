@@ -5,6 +5,7 @@
  */
 package properties;
 
+import model.ConnectionOpenClose;
 import exception.ConnectException;
 import java.sql.Connection;
 import org.junit.Test;
