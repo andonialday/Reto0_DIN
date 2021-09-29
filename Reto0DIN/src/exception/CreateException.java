@@ -11,7 +11,7 @@ public class CreateException extends Exception{
 	private static final long serialVersionUID = 1L;
 
         /**
-         * It takes the Message from the super class when something fails 
+         *  It takes the Message from the super class when something fails 
          * @param message 
          */
 	public CreateException(String message) {

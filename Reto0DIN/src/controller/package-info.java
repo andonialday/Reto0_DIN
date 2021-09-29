@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 /**
- * In this Package we have the controller 
+ * In this Package we have the controler 
  */
 package controller;

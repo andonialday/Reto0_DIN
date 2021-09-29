@@ -12,8 +12,8 @@ public class ConnectException extends Exception{
 	private static final long serialVersionUID = 1L;
 
         /**
-         * It takes the Message from the super class when something fails 
          * @param message 
+         * It takes the Message from the super class when something fails 
          */
 	public ConnectException(String message) {
 		super(message);
