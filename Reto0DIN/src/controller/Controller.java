@@ -18,9 +18,9 @@ import view.View;
 public class Controller {
 
     /**
-     * The Method to combine the layers of model and interface
-     * @param view
-     * @param model
+     * The Method to combine the layers of model and view
+     * @param view Selected type of view
+     * @param model Selected type of model
      * @throws ReadException
      * @throws ConnectException In this method we take both the view and the
      * model to show the greeting to the user.

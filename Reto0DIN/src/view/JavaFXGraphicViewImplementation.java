@@ -13,19 +13,28 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
+ * Implementation of the View Interface. This Implementation uses the JavaFX
+ * sources to show the greeting to the user
  *
- * @author 2dam
+ * @author Andoni Alday
  */
-
 public class JavaFXGraphicViewImplementation extends Application implements View {
 
-     @Override
+    /**
+     * Method to show the greeting to the user via JavaFX
+     * @param greeting
+     */
+    @Override
     public void showGreeting(String greeting) {
-        String[] parameters= new String [1];
+        String[] parameters = new String[1];
         parameters[0] = greeting;
-        launch(parameters);        
+        launch(parameters);
     }
-    
+
+    /**
+     *
+     * @param primaryStage
+     */
     public void start(Stage primaryStage) {
         Label text = new Label(getParameters().getRaw().get(0));
         text.setFont(new Font(40));
@@ -35,5 +44,5 @@ public class JavaFXGraphicViewImplementation extends Application implements View
         primaryStage.sizeToScene();
         primaryStage.show();
     }
-    
+
 }

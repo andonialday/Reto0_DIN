@@ -6,13 +6,17 @@
 package view;
 
 /**
+ * This interface dictates the requisites of the Implementations (JavaFX, Swing
+ * and IDE Console)
  *
  * @author Andoni Alday
  */
 public interface View {
-   
-     public void showGreeting(String greeting);
-         
-     
-    
+
+    /**
+     * Method to show the greeting to the user
+     * @param greeting
+     */
+    public void showGreeting(String greeting);
+
 }

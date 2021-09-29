@@ -12,7 +12,7 @@ public class CreateException extends Exception{
 
         /**
          * It takes the Message from the super class when something fails 
-         * @param message 
+         * @param message message to be shown when the exception triggers
          */
 	public CreateException(String message) {
 		super(message);

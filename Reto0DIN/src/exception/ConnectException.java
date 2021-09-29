@@ -13,7 +13,7 @@ public class ConnectException extends Exception{
 
         /**
          * It takes the Message from the super class when something fails 
-         * @param message 
+         * @param message message to be shown when the exception triggers
          */
 	public ConnectException(String message) {
 		super(message);

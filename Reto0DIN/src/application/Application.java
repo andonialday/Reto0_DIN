@@ -20,8 +20,7 @@ import view.ViewFactory;
 public class Application {
 
     /**
-     * In our main we use 2 exceptions if we had a problem with the DDBB.In our
-     * main we use 2 exceptions if we had a problem with the DDBB.
+     * Main launch point of the Application
      *
      * @param args the command line arguments
      * @throws ReadException if failing to read from the DDBB

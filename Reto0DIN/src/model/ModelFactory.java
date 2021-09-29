@@ -19,6 +19,12 @@ public class ModelFactory {
     final private String DB = "BBDD";
     final private String FILE = "File";
 
+    /**
+     * Method to obtain a model of the Implemented type chosen in the
+     * model.properties file
+     *
+     * @return Model ready to be used by the controller
+     */
     public Model getModel() {
         Model model = null;
         switch (type) {

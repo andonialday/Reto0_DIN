@@ -8,7 +8,8 @@ package view;
 import java.util.ResourceBundle;
 
 /**
- *
+ * This class defines which implementation of View is used based on the
+ * view.properties configuration file
  * @author Andoni Alday
  */
 public class ViewFactory {
@@ -18,6 +19,12 @@ public class ViewFactory {
     final private String SWING = "Swing";
     final private String TEXT = "Text";
 
+    /**
+     * Method to obtain a view of the Implemented type chosen in the
+     * view.properties file
+     *
+     * @return View ready to be used by the controller
+     */
     public View getView() {
         View view = null;
         switch (type) {
