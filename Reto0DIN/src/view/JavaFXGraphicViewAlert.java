@@ -18,7 +18,7 @@ public class JavaFXGraphicViewAlert {
     {
         /* By specifying a null headerMessage String, we cause the dialog to
            not have a header */
-        infoBox(infoMessage, titleBar, null);
+        infoBox(infoMessage, titleBar, infoMessage);
     }
 
     public static void infoBox(String infoMessage, String titleBar, String headerMessage)

@@ -8,6 +8,8 @@ package model;
 import java.util.ResourceBundle;
 
 /**
+ * This class defines which implementation of Model is used based on the
+ * model.properties configuration file
  *
  * @author Enaitz Izagirre
  */

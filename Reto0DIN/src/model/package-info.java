@@ -4,6 +4,6 @@
  * and open the template in the editor.
  */
 /**
- * In this Package we have the Model his Factory and his 2 Options
+ * In this Package we have the Model, his Factory and its implementating variants
  */
 package model;
