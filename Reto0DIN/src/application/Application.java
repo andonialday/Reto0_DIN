@@ -13,15 +13,19 @@ import view.View;
 import view.ViewFactory;
 
 /**
+ * It is the class from which everything is executed, it contains the main
  *
  * @author Andoni Alday
  */
 public class Application {
 
     /**
+     * In our main we use 2 exceptions if we had a problem with the DDBB.In our
+     * main we use 2 exceptions if we had a problem with the DDBB.
+     *
      * @param args the command line arguments
-     * @throws exception.ReadException
-     * @throws exception.ConnectException
+     * @throws ReadException if failing to read from the DDBB
+     * @throws ConnectException if failing connea DDBB
      */
     public static void main(String[] args) throws ReadException, ConnectException {
         // TODO code application logic here
@@ -32,5 +36,5 @@ public class Application {
         Controller control = new Controller();
         control.run(view, model);
     }
-    
+
 }

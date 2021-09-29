@@ -9,9 +9,11 @@ import exception.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import properties.ConnectionOpenClose;
 
 /**
+ * This class implements the model interface to take the getGreeting Method. Its
+ * one of the 2 classes who is called by the Model Factory It is connected to
+ * the DDBB
  *
  * @author Enaitz Izagirre
  */
@@ -23,6 +25,13 @@ public class BdaModelImplementation implements Model {
     private String greeting;
     private final String readGreeting = "SELECT Greeting FROM greetings";
 
+    /**
+     * This method get the greeting from the DDBB to return it
+     *
+     * @return Returns the String Greeting from the BDA
+     * @throws ReadException if failing to read from the DDBB 
+     * @throws ConnectException if failing to connect to the DDBB
+     */
     @Override
     public String getGreeting() throws ReadException, ConnectException {
         ResultSet rs = null;

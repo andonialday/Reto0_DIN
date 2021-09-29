@@ -11,14 +11,23 @@ import model.Model;
 import view.View;
 
 /**
- * In this method we take both the view and the model to show the user the greeting
+ * This class is called by the main . Here we have the method Run .
+ *
  * @author Enaitz Izagirre
  */
 public class Controller {
-    
-    public void run(View view, Model model) throws ReadException, ConnectException{
+
+    /**
+     * The Method to combine the layers of model and interface
+     * @param view
+     * @param model
+     * @throws ReadException
+     * @throws ConnectException In this method we take both the view and the
+     * model to show the greeting to the user.
+     */
+    public void run(View view, Model model) throws ReadException, ConnectException {
         String greeting = model.getGreeting();
         view.showGreeting(greeting);
     }
-    
+
 }
