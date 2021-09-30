@@ -8,8 +8,8 @@ package model;
 import exception.*;
 
 /**
- * This interface dictates the requisites of the BdaModelImplementation class
- * and the FichModelImplementation class
+ * This interface dictates the requisites of the DDBBModelImplementation class
+ * and the FileModelImplementation class
  *
  * @author Enaitz Izagirre
  */

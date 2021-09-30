@@ -1,8 +1,8 @@
 package exception;
 /**
  * This class extends from the Exception class.
- * It is called when some method tries to Read dates From the BDA and fails
- * @author Enaitz
+ * It is called when some method tries to Read dates From the DDBB and fails
+ * @author Enaitz Izagirre
  */
 public class ReadException extends Exception{
 

@@ -16,7 +16,7 @@ import java.sql.ResultSet;
  *
  * @author Enaitz Izagirre
  */
-public class BdaModelImplementation implements Model {
+public class DDBBModelImplementation implements Model {
 
     private Connection con;
     private PreparedStatement stmt;
@@ -27,7 +27,7 @@ public class BdaModelImplementation implements Model {
     /**
      * This method get the greeting from the DDBB to return it
      *
-     * @return Returns the String Greeting from the BDA
+     * @return Returns the String Greeting from the DDBB
      * @throws ReadException if failing to read from the DDBB
      * @throws ConnectException if failing to connect to the DDBB
      */

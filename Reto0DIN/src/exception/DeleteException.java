@@ -2,8 +2,8 @@ package exception;
 
 /**
  * This class extends from the Exception class.
- * It is called when some method tries to Delete dates in the BDA and fails
- * @author Enaitz
+ * It is called when some method tries to Delete dates in the DDBB and fails
+ * @author Enaitz Izagirre
  */
 public class DeleteException extends Exception{
 

@@ -20,9 +20,17 @@ public class ModelFactoryTest {
     }
 
     @Test
-    public void testGetModel() {
+    public void testGetBDAModel() {
         Model model = instance.getModel();
         assertNotNull("Error generating Model", model);
+        assertTrue("Error generating Model", model instanceof DDBBModelImplementation);
+    }
+    
+    @Test
+    public void testGetFichModel() {
+        Model model = instance.getModel();
+        assertNotNull("Error generating Model", model);
+        assertTrue("Error generating Model", model instanceof FileModelImplementation);
     }
     
 }

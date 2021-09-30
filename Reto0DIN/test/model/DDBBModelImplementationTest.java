@@ -14,11 +14,11 @@ import static org.junit.Assert.*;
  *
  * @author 2dam
  */
-public class BdaModelImplementationTest {
+public class DDBBModelImplementationTest {
     
-    BdaModelImplementation instance = new BdaModelImplementation();
+    DDBBModelImplementation instance = new DDBBModelImplementation();
     
-    public BdaModelImplementationTest() {
+    public DDBBModelImplementationTest() {
     }
 
     @Test

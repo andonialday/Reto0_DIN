@@ -13,11 +13,11 @@ import org.junit.Test;
  *
  * @author 2dam
  */
-public class FichModelImplementationTest {
+public class FileModelImplementationTest {
     
-    FichModelImplementation instance = new FichModelImplementation();
+    FileModelImplementation instance = new FileModelImplementation();
     
-    public FichModelImplementationTest() {
+    public FileModelImplementationTest() {
     }
     
     @Test

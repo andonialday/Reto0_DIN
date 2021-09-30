@@ -27,6 +27,7 @@ public class ConnectionOpenCloseTest {
       Connection con= null;
       con = instance.openConnection();
       assertNotNull("Error Opening connection to DataBase", con);
+      assertTrue("Error Opening connection to DataBase", con instanceof Connection);
     }
     
 }

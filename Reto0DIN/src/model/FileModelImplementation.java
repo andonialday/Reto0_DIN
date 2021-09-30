@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
  * It is connected to a File
  * @author Enaitz Izagirre
  */
-public class FichModelImplementation implements Model{
+public class FileModelImplementation implements Model{
 
     private ResourceBundle configFile;
     private String greeting;
@@ -25,7 +25,7 @@ public class FichModelImplementation implements Model{
      */
     @Override
     public String getGreeting() {    
-       configFile = ResourceBundle.getBundle("properties.fich");
+       configFile = ResourceBundle.getBundle("properties.file");
        greeting = configFile.getString("Saludo");
          return greeting;
     }

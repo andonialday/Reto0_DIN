@@ -3,7 +3,7 @@ package exception;
 /**
  * This class extends from the Exception class.
  * It is called when some method tries to Insert dates in the database and fails
- * @author Enaitz
+ * @author Enaitz Izagirre
  */
 public class CreateException extends Exception{
 

@@ -20,9 +20,24 @@ public class ViewFactoryTest {
     }
 
     @Test
-    public void testGetModel() {
+    public void testGetTextView() {
         View view = instance.getView();
         assertNotNull("Error generating Model", view);
+        assertTrue("Error generating Model", view instanceof TextViewImplementation);
+    }
+    
+    @Test
+    public void testGetSwingView() {
+        View view = instance.getView();
+        assertNotNull("Error generating Model", view);
+        assertTrue("Error generating Model", view instanceof SwingGraphicViewImplementation);
+    }
+    
+    @Test
+    public void testGetJavaFXView() {
+        View view = instance.getView();
+        assertNotNull("Error generating Model", view);
+        assertTrue("Error generating Model", view instanceof JavaFXGraphicViewImplementation);
     }
     
 }

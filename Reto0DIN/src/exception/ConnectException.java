@@ -2,8 +2,8 @@ package exception;
 
 /**
  * This class extends from the Exception class.
- * It is called when some method tries to connect to the BDA and fails
- * @author Enaitz
+ * It is called when some method tries to connect to the DDBB and fails
+ * @author Enaitz Izagirre
  */
 
 public class ConnectException extends Exception{

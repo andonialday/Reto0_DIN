@@ -29,11 +29,11 @@ public class ModelFactory {
         Model model = null;
         switch (type) {
             case DB: {
-                model = new BdaModelImplementation();
+                model = new DDBBModelImplementation();
             }
             break;
             case FILE: {
-                model = new FichModelImplementation();
+                model = new FileModelImplementation();
             }
             break;
             default: {

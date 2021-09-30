@@ -24,7 +24,7 @@ public class Application {
      *
      * @param args the command line arguments
      * @throws ReadException if failing to read from the DDBB
-     * @throws ConnectException if failing connea DDBB
+     * @throws ConnectException if failing to connect to the DDBB
      */
     public static void main(String[] args) throws ReadException, ConnectException {
         // TODO code application logic here

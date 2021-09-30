@@ -2,8 +2,8 @@ package exception;
 
 /**
  * This class extends from the Exception class.
- * It is called when some method tries to Update Dates of the the BDA and fails
- * @author 2dam
+ * It is called when some method tries to Update Dates of the the DDBB and fails
+ * @author Enaitz Izagirre
  */
 public class UpdateException extends Exception{
 
